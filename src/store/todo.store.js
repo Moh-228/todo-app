@@ -18,12 +18,57 @@ const state = {
     filter: Filters.All,
 }
 
-const initStore = ()=>{
+const initStore = () => {
 
     console.log(state);
     console.log('InitStore 🥑');
 }
 
-export default{
+const loadStore = () => {
+    throw new Error('Not Implemented');
+}
+
+const getTodo = (filter = Filters.All)=>{
+    throw new Error('Not Implemented');
+}
+
+const addTodo = (description) => {
+    throw new Error('Not Implemented');
+
+}
+
+const toggleTodo = (todoId) => {
+    throw new Error('Not Implemented');
+}
+
+const deleteTodo = (todoId) => {
+    throw new Error('Not Implemented');
+}
+
+
+const deleteCompleted = (todoId) => {
+    throw new Error('Not Implemented');
+}
+
+const setFilter = (newFilter = Filters.All) => {
+    throw new Error('Not Implemented');
+}
+
+const getCurrentFilter = () => {
+    throw new Error('Not Implemented');
+}
+
+
+
+export default {
     initStore,
+    loadStore,
+    toggleTodo,
+    deleteTodo,
+    deleteCompleted,
+    setFilter,
+    getCurrentFilter,
+
+
+
 }
